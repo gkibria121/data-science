@@ -10,6 +10,7 @@ services:
       - "traefik.http.routers.notebook-viewer.rule=Host(`data-science.gkibria121.com`)"
       - "traefik.http.routers.notebook-viewer.entrypoints=web"
       - "traefik.http.services.notebook-viewer.loadbalancer.server.port=80"
+    restart: unless-stopped
 networks:
   traefik-network:
     external: true
