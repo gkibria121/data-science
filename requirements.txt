@@ -11,3 +11,5 @@ nbconvert
 scikit-learn     
 tensorflow
 seaborn
+transformers 
+torch
